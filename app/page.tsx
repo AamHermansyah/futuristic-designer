@@ -13,7 +13,7 @@ export default function Home() {
       <About />
       <Services />
       <Works />
-      <div className="container flex items-center justify-center w-full min-h-screen py-20">
+      <div className="container flex items-center justify-center w-full min-h-[500px] py-20">
         <h1 className="text-4xl sm:text-5xl md:text-7xl uppercase flex flex-col lg:max-h-[150px] gap-2">
           <span className="w-max bg-colorfull-red px-4 sm:px-10">Are</span>
           <span className="self-center bg-colorfull-yellow w-max px-4 sm:px-10">You</span>

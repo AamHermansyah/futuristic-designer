@@ -3,6 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 import Typewriter from "typewriter-effect"
+import { motion } from 'framer-motion'
+import { containerShow, itemShow } from '@/lib/animate'
 
 function Hero() {
   return (
@@ -13,15 +15,20 @@ function Hero() {
         fill={true}
         className="object-cover blur-xl -z-10"
       />
-      <div className="bg-black bg-opacity-50">
+      <motion.div
+        variants={containerShow}
+        initial="initial"
+        animate="animate"
+        className="bg-black bg-opacity-50"
+      >
         <div className="container gap-10">
           <div className="min-h-screen flex flex-col justify-center py-28">
-            <h1 className="text-4xl sm:text-7xl font-extrabold">
+            <motion.h1 variants={itemShow(.5, false)} className="text-4xl sm:text-7xl font-extrabold">
               Futurustic
               <br />
               Designers
-            </h1>
-            <h4 className="md:flex items-center gap-4 text-xl sm:text-4xl font-extrabold uppercase mt-2">
+            </motion.h1>
+            <motion.h4 variants={itemShow(.5, false)} className="md:flex items-center gap-4 text-xl sm:text-4xl font-extrabold uppercase mt-2">
               We Can
               <span className="text-colorfull-red">
               <Typewriter
@@ -53,11 +60,11 @@ function Hero() {
                     .start()
                 }} />
               </span>
-            </h4>
-            <p className="text-sm sm:text-base mt-4 pl-1 max-w-sm sm:max-w-2xl ">
+            </motion.h4>
+            <motion.p variants={itemShow(.5, false)} className="text-sm sm:text-base mt-4 pl-1 max-w-sm sm:max-w-2xl ">
               Let&apos;s bring your vision to life and make your brand shine in the digital realm!
-            </p>
-            <div className="mt-12">
+            </motion.p>
+            <motion.div variants={itemShow(.5)} className="mt-12">
               <Link
                 href=""
                 className="px-10 py-4 rounded-full btn-gradient-1"
@@ -70,10 +77,10 @@ function Hero() {
               >
                 <HiOutlineExternalLink fontSize={24} /> See My Works
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

@@ -3,11 +3,11 @@ import { HiPhone } from 'react-icons/hi'
 
 function Contact() {
   return (
-    <section id="contact" className="relative">
-      <div>
+    <section id="contact" className="w-full">
+      <div className="relative overflow-x-clip">
         <div className="absolute left-[50%] top-[30%] w-[300px] aspect-square bg-colorfull-blue -z-10 blur-[250px]" />
       </div>
-      <div className="container min-h-screen py-20">
+      <div className="container py-20">
         <div className="flex flex-col lg:flex-row items-center sm:px-10 gap-x-4 gap-y-10">
           <div className="lg:basis-[50%] font-semibold sm:px-4 lg:px-0">
             <h4 className="text-lg text-colorfull-yellow">Get In Touch</h4>

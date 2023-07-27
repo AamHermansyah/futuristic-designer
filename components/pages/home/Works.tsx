@@ -6,7 +6,7 @@ import { BiLinkExternal } from 'react-icons/bi'
 function Works() {
   return (
     <section id="works">
-      <div className="relative max-w-[1000px] mx-auto">
+      <div className="relative overflow-x-clip">
         <div className="absolute left-[50%] top-[50%] w-[600px] aspect-square bg-colorfull-purple -z-10 blur-[500px]" />
         <div className="absolute right-[50%] top-[50%] w-[300px] aspect-square bg-colorfull-red -z-10 blur-[250px]" />
       </div>

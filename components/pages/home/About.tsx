@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <section className="relative bg-background mt-20 w-full" id="about">
+    <section className="relative bg-background mt-20 w-full overflow-x-clip" id="about">
       <div>
         <div className="absolute bottom-[20%] left-[55%] w-[500px] aspect-video bg-colorfull-blue blur-[250px]" />
         <div className="absolute bottom-0 left-0 w-[500px] aspect-video bg-colorfull-red blur-[300px]" />

@@ -54,3 +54,31 @@ export const services = [
     content: `We know your app is as unique as your brand, and that's why our app development solutions are tailor-made to suit your specific requirements and goals. Our collaborative process ensures your vision remains at the forefront of our development, resulting in an app that's truly a reflection of your brand.`
   },
 ];
+
+export const navigation = [
+  {
+    id: 'home',
+    href: '#home',
+    title: 'Home'
+  },
+  {
+    id: 'about',
+    href: '#about',
+    title: 'About Us'
+  },
+  {
+    id: 'services',
+    href: '#services',
+    title: 'Services'
+  },
+  {
+    id: 'works',
+    href: '#works',
+    title: 'Works'
+  },
+  {
+    id: 'contact',
+    href: '#contact',
+    title: 'Contact Me'
+  },
+]
