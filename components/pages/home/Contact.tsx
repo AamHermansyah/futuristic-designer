@@ -9,7 +9,7 @@ function Contact() {
       <div className="relative overflow-x-clip">
         <div className="absolute left-[50%] top-[30%] w-[300px] aspect-square bg-colorfull-blue -z-10 blur-[250px]" />
       </div>
-      <div className="container py-20">
+      <div className="px-4 container py-20">
         <div className="flex flex-col lg:flex-row items-center sm:px-10 gap-x-4 gap-y-10">
           <div className="lg:basis-[50%] font-semibold sm:px-4 lg:px-0">
             <h4 className="text-lg text-colorfull-yellow">Get In Touch</h4>
@@ -26,7 +26,7 @@ function Contact() {
                   <motion.div key={item.id} variants={itemShow()}>
                     <Link target="_blank" rel="noopener noreferrer" href={item.link} className="flex items-center font-thin gap-4 text-colorfull-green">
                       <item.Icon fontSize={24} />
-                      <span className="text-white underline underline-offset-4">{item.value}</span>
+                      <span className="text-xs sm:text-base text-white underline underline-offset-4">{item.value}</span>
                     </Link>
                   </motion.div>
                 );
@@ -34,7 +34,7 @@ function Contact() {
                 return (
                   <motion.div variants={itemShow()} key={item.id} className="flex items-center font-thin gap-4 text-colorfull-green">
                     <item.Icon fontSize={24} />
-                    <span className="text-white">{item.value}</span>
+                    <span className="text-white text-xs sm:text-base">{item.value}</span>
                   </motion.div>
                 )
               })}

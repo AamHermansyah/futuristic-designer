@@ -129,6 +129,6 @@ export const contacts = [
     id: 'instagram',
     Icon: BiLogoInstagramAlt,
     value: '@futurusticdesigners',
-    link: 'www.instagram.com/futurusticdesigners'
+    link: 'https://www.instagram.com/futurusticdesigners'
   },
 ];

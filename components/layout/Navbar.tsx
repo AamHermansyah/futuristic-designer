@@ -79,7 +79,11 @@ function Navbar() {
               return (
                 <div className="overflow-hidden py-2" key={item.id}>
                   <motion.div variants={itemTranslate({ y: "165%", x: 0 }, {y: "0%", x: 0}, .3)}>
-                    <Link href={item.href} className="py-2 px-4 btn-gradient-2 rounded-full transition">
+                    <Link
+                      onClick={() => setNavbarActive(false)}
+                      href={item.href} 
+                      className="py-2 px-4 btn-gradient-2 rounded-full transition"
+                    >
                       {item.title}
                     </Link>
                   </motion.div>
@@ -89,7 +93,13 @@ function Navbar() {
             return (
               <div className="overflow-hidden" key={item.id}>
                 <motion.div variants={itemTranslate({ y: "105%", x: 0 }, {y: "0%", x: 0}, .3)}>
-                  <Link href={item.href} className="nav-item">{item.title}</Link>
+                  <Link 
+                    onClick={() => setNavbarActive(false)}
+                    href={item.href} 
+                    className="nav-item"
+                  >
+                    {item.title}
+                  </Link>
                 </motion.div>
               </div>
             )
