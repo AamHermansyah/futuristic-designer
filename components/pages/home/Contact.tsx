@@ -1,5 +1,7 @@
-import { MdEmail, MdLocationPin } from 'react-icons/md'
-import { HiPhone } from 'react-icons/hi'
+import { motion } from 'framer-motion'
+import { contacts } from '@/constants'
+import Link from 'next/link'
+import { containerShow, itemShow } from '@/lib/animate';
 
 function Contact() {
   return (
@@ -12,17 +14,31 @@ function Contact() {
           <div className="lg:basis-[50%] font-semibold sm:px-4 lg:px-0">
             <h4 className="text-lg text-colorfull-yellow">Get In Touch</h4>
             <h2 className="text-4xl sm:text-5xl">Let&apos;s Work Together!</h2>
-            <div className="mt-5 sm:mt-10 grid grid-cols-1 gap-4">
-              <span className="flex font-thin gap-4">
-                <MdEmail fontSize={24} /> example@gmail.com
-              </span>
-              <span className="flex font-thin gap-4">
-                <HiPhone fontSize={24} /> +61-666-267-898
-              </span>
-              <span className="flex font-thin gap-4">
-                <MdLocationPin fontSize={24} /> West Java, Indonesia
-              </span>
-            </div>
+            <motion.div
+              variants={containerShow}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, amount: 'all' }}
+              className="mt-5 sm:mt-10 grid grid-cols-1 gap-4"
+            >
+              {contacts.map((item) => {
+                if (item?.link) return (
+                  <motion.div key={item.id} variants={itemShow()}>
+                    <Link target="_blank" rel="noopener noreferrer" href={item.link} className="flex items-center font-thin gap-4 text-colorfull-green">
+                      <item.Icon fontSize={24} />
+                      <span className="text-white underline underline-offset-4">{item.value}</span>
+                    </Link>
+                  </motion.div>
+                );
+                
+                return (
+                  <motion.div variants={itemShow()} key={item.id} className="flex items-center font-thin gap-4 text-colorfull-green">
+                    <item.Icon fontSize={24} />
+                    <span className="text-white">{item.value}</span>
+                  </motion.div>
+                )
+              })}
+            </motion.div>
           </div>
           <div className="lg:basis-[50%]">
             <form action="">

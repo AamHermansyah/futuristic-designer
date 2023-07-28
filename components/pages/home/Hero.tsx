@@ -9,12 +9,24 @@ import { containerShow, itemShow } from '@/lib/animate'
 function Hero() {
   return (
     <section id="hero" className="relative overflow-hidden">
-      <Image
-        src="/images/hero.jpg"
-        alt="hero-bg"
-        fill={true}
-        className="object-cover blur-xl -z-10"
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: .2 }}
+      >
+        <Image
+          src="/images/hero-landscape.jpg"
+          alt="hero-bg"
+          fill={true}
+          className="object-cover blur-sm -z-10 hidden md:block"
+        />
+        <Image
+          src="/images/hero-potrait.jpg"
+          alt="hero-bg"
+          fill={true}
+          className="object-cover blur-sm -z-10 block md:hidden"
+        />
+      </motion.div>
       <motion.div
         variants={containerShow}
         initial="initial"

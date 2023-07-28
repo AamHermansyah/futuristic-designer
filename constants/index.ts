@@ -1,3 +1,8 @@
+import { calculateExperience } from "@/lib/utils";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { HiPhone } from "react-icons/hi";
+import { MdEmail, MdLocationPin } from "react-icons/md";
+
 export const services = [
   {
     id: 'web-design',
@@ -82,3 +87,48 @@ export const navigation = [
     title: 'Contact Me'
   },
 ]
+
+export const experiences = {
+  years: {
+    id: 'years',
+    title: 'Years Of Experience',
+    value: calculateExperience(2018),
+    symbol: ''
+  },
+  projects:{
+    id: 'projects',
+    title: 'Projects Completed',
+    value: '2',
+    symbol: 'k+'
+  },
+  clients: {
+    id: 'clients',
+    title: 'Satisfied Client',
+    value: '600',
+    symbol: '+'
+  },
+}
+
+export const contacts = [
+  {
+    id: 'email',
+    Icon: MdEmail,
+    value: 'futurusticdesigners@gmail.com'
+  },
+  {
+    id: 'phone',
+    Icon: HiPhone,
+    value: '068 947 3833'
+  },
+  {
+    id: 'address',
+    Icon: MdLocationPin,
+    value: 'Tirana, Albania'
+  },
+  {
+    id: 'instagram',
+    Icon: BiLogoInstagramAlt,
+    value: '@futurusticdesigners',
+    link: 'www.instagram.com/futurusticdesigners'
+  },
+];
