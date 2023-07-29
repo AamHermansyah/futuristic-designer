@@ -18,13 +18,13 @@ function Hero() {
           src="/images/hero-landscape.jpg"
           alt="hero-bg"
           fill={true}
-          className="object-cover blur-sm -z-10 hidden md:block"
+          className="object-cover -z-10 hidden md:block"
         />
         <Image
           src="/images/hero-potrait.jpg"
           alt="hero-bg"
           fill={true}
-          className="object-cover blur-sm -z-10 block md:hidden"
+          className="object-cover -z-10 block md:hidden"
         />
       </motion.div>
       <motion.div
@@ -78,13 +78,13 @@ function Hero() {
             </motion.p>
             <motion.div variants={itemShow(.5)} className="mt-12">
               <Link
-                href=""
+                href="#contact"
                 className="px-10 py-4 rounded-full btn-gradient-1"
               >
                 Contact Me
               </Link>
               <Link
-                href=""
+                href="/works"
                 className="mt-1 max-w-sm flex items-center gap-2 px-6 py-3 uppercase font-bold border border-white rounded-full hover:bg-white hover:text-black transition"
               >
                 <HiOutlineExternalLink fontSize={24} /> See My Works

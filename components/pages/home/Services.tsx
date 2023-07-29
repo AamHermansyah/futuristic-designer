@@ -7,7 +7,7 @@ import { containerShow, itemShow } from '@/lib/animate'
 
 function Services() {
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="py-20 w-full overflow-x-clip">
       <div className="container flex justify-center mb-10">
         <h1 className="w-max text-3xl sm:text-5xl md:text-7xl uppercase flex flex-col gap-y-2">
           <motion.span

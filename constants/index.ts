@@ -132,3 +132,42 @@ export const contacts = [
     link: 'https://www.instagram.com/futurusticdesigners'
   },
 ];
+
+export const works = [
+  {
+    id: 'work-1',
+    imageUrl: '/images/works/app-development.webp',
+    type: 'App Development',
+    title: 'Title'
+  },
+  {
+    id: 'work-2',
+    imageUrl: '/images/works/digital-marketing-seo.jpg',
+    type: 'Digital Marketing & SEO',
+    title: 'Title'
+  },
+  {
+    id: 'work-3',
+    imageUrl: '/images/works/graphic-design.jpg',
+    type: 'Graphic Design',
+    title: 'Title'
+  },
+  {
+    id: 'work-4',
+    imageUrl: '/images/works/social-media.jpg',
+    type: 'Soc-Med Management',
+    title: 'Title'
+  },
+  {
+    id: 'work-5',
+    imageUrl: '/images/works/video-editing.webp',
+    type: 'Video Editing',
+    title: 'Title'
+  },
+  {
+    id: 'work-6',
+    imageUrl: '/images/works/web-design.png',
+    type: 'Web Design',
+    title: 'Title'
+  },
+];

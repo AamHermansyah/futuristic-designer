@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { itemShow, staggerContainer } from '@/lib/animate'
+import { itemShow } from '@/lib/animate'
 import { experiences } from '@/constants'
 
 function Experiences() {
   return (
-    <section id="experiences">
+    <section id="experiences" className="w-full overflow-x-clip">
       <div className="relative px-10">
         <Image
           src="/images/about-landscape.jpg"
@@ -65,7 +65,7 @@ function Experiences() {
                 transition={{ duration: 1, type: 'spring'}}
                 className="block text-2xl"
               >
-                {experiences.years.title}
+                {experiences.projects.title}
               </motion.span>
             </div>
           </div>
@@ -88,7 +88,7 @@ function Experiences() {
                 transition={{ duration: 1, type: 'spring'}}
                 className="block text-2xl"
               >
-                {experiences.years.title}
+                {experiences.clients.title}
               </motion.span>
             </div>
           </div>
