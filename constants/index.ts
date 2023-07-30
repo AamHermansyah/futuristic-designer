@@ -103,7 +103,7 @@ export const experiences = {
   },
   clients: {
     id: 'clients',
-    title: 'Satisfied Client',
+    title: 'Satisfied Clients',
     value: '600',
     symbol: '+'
   },

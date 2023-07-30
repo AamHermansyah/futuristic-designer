@@ -14,12 +14,7 @@ function Works() {
         <div className="absolute right-[50%] top-[50%] w-[300px] aspect-square bg-colorfull-red -z-10 blur-[250px]" />
       </div>
       <div className="container py-10">
-        <div className="flex justify-between items-end gap-2">
-          <h1 className="text-3xl sm:text-7xl uppercase">Works</h1>
-          <Link href="" className="text-xs sm:text-xl underline underline-offset-4 text-right">
-            View All Projects
-          </Link>
-        </div>
+        <h1 className="text-3xl sm:text-7xl uppercase">Works</h1>
         <motion.div
           variants={containerShow}
           initial="initial"

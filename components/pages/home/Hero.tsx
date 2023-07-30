@@ -84,7 +84,7 @@ function Hero() {
                 Contact Me
               </Link>
               <Link
-                href="/works"
+                href="#works"
                 className="mt-1 max-w-sm flex items-center gap-2 px-6 py-3 uppercase font-bold border border-white rounded-full hover:bg-white hover:text-black transition"
               >
                 <HiOutlineExternalLink fontSize={24} /> See My Works

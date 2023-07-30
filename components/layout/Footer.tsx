@@ -13,7 +13,7 @@ function Footer() {
           initial="initial"
           whileInView="animate"
           className="inline-block text-gradient-1 sm:text-lg font-bold"
-        >Futuristic Designers
+        >Futurustic Designers
       </motion.span>. <br className="block sm:hidden" />All Rights Reserved.
       </span>
     </div>

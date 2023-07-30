@@ -58,14 +58,6 @@ const CardWork: React.FC<CardWorkProps> = ({ item }) => {
         >
           {item.type}
         </motion.h4>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={isHovered ? 'visible' : 'hidden'}
-          variants={itemShow(.2)}
-          className="mt-2 text-xs sm:text-lg"
-        >
-          {item.title}
-        </motion.p>
       </div>
     </motion.div>
   );
