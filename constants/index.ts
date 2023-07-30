@@ -95,7 +95,7 @@ export const experiences = {
     value: calculateExperience(2018),
     symbol: ''
   },
-  projects:{
+  projects: {
     id: 'projects',
     title: 'Projects Completed',
     value: '2',
@@ -109,11 +109,13 @@ export const experiences = {
   },
 }
 
+export const EMAIL = 'futurusticdesigners@gmail.com';
+
 export const contacts = [
   {
     id: 'email',
     Icon: MdEmail,
-    value: 'futurusticdesigners@gmail.com'
+    value: EMAIL
   },
   {
     id: 'phone',

@@ -7,10 +7,12 @@ import Hero from "@/components/pages/home/Hero"
 import Services from "@/components/pages/home/Services"
 import Works from "@/components/pages/home/Works"
 import Experiences from "@/components/pages/home/Experiences";
+import { FollowingCursor } from "@/components/ui/followingCursor";
 
 export default function Home() {
   return (
     <>
+      <FollowingCursor />
       <Hero />
       <About />
       <Experiences />

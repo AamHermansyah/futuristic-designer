@@ -16,12 +16,12 @@ interface CardWorkProps {
 const CardWork: React.FC<CardWorkProps> = ({ item }) => {
   const itemShow = (delay: number = 0): Variants => ({
     hidden: { opacity: 0, y: 20 },
-    visible: { 
+    visible: {
       opacity: 1,
       y: 0,
       transition: {
         delay
-      } 
+      }
     },
   });
 
@@ -54,7 +54,7 @@ const CardWork: React.FC<CardWorkProps> = ({ item }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={isHovered ? 'visible' : 'hidden'}
           variants={itemShow()}
-          className="sm:text-2xl font-semibold uppercase text-gradient-2"
+          className="sm:text-2xl font-semibold uppercase text-gradient-2 animate-cursor-hovered"
         >
           {item.type}
         </motion.h4>

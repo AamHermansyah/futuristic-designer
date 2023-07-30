@@ -49,7 +49,7 @@ function Services() {
               key={item.id}
             >
               <div className="col-span-12 md:col-span-4">
-                <motion.h2 variants={itemShow()} className={cn('md:sticky md:top-20 uppercase text-2xl text-right', item.titleColor)}>
+                <motion.h2 variants={itemShow()} className={cn('md:sticky md:top-20 uppercase text-2xl text-right animate-cursor-hovered', item.titleColor)}>
                   {item.title}
                 </motion.h2>
               </div>
@@ -58,8 +58,8 @@ function Services() {
                   <motion.h4
                     initial={{ x: '-100%' }}
                     whileInView={{ x: 0 }}
-                    transition={{ duration: 1, type: 'spring'}}
-                    className={cn('text-xl font-bold', item.captionColor)}
+                    transition={{ duration: 1, type: 'spring' }}
+                    className={cn('text-xl font-bold animate-cursor-hovered', item.captionColor)}
                   >
                     {item.caption}
                   </motion.h4>

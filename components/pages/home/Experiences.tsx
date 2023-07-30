@@ -39,8 +39,8 @@ function Experiences() {
               <motion.span
                 initial={{ x: '100%' }}
                 whileInView={{ x: 0 }}
-                transition={{ duration: 1, type: 'spring'}}
-                className="block text-2xl"
+                transition={{ duration: 1, type: 'spring' }}
+                className="block text-2xl animate-cursor-hovered"
               >
                 {experiences.years.title}
               </motion.span>
@@ -62,8 +62,8 @@ function Experiences() {
               <motion.span
                 initial={{ x: '-100%' }}
                 whileInView={{ x: 0 }}
-                transition={{ duration: 1, type: 'spring'}}
-                className="block text-2xl"
+                transition={{ duration: 1, type: 'spring' }}
+                className="block text-2xl animate-cursor-hovered"
               >
                 {experiences.projects.title}
               </motion.span>
@@ -85,8 +85,8 @@ function Experiences() {
               <motion.span
                 initial={{ x: '100%' }}
                 whileInView={{ x: 0 }}
-                transition={{ duration: 1, type: 'spring'}}
-                className="block text-2xl"
+                transition={{ duration: 1, type: 'spring' }}
+                className="block text-2xl animate-cursor-hovered"
               >
                 {experiences.clients.title}
               </motion.span>
